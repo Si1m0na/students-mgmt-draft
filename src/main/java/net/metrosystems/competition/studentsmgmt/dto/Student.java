@@ -17,11 +17,11 @@ public class Student {
 	private String lastName;
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
 	@JsonDeserialize(using= LocalDateDeserializer.class)
-	@JsonSerialize(using = LocalDateSerializer.class)  
+	@JsonSerialize(using = LocalDateSerializer.class)
 	private LocalDate dateOfBirth;
 	private String spec;
 	private double avg;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -58,7 +58,7 @@ public class Student {
 	public void setAvg(double avg) {
 		this.avg = avg;
 	}
-	
+
 	public Student(int id, String firstName, String lastName, LocalDate dateOfBirth, String spec, double avg) {
 		super();
 		this.id = id;
@@ -71,7 +71,7 @@ public class Student {
 
 	public Student() {
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", dateOfBirth="
@@ -120,4 +120,5 @@ public class Student {
 			return false;
 		return true;
 	}
+
 }

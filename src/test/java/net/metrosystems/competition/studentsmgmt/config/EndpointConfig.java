@@ -1,10 +1,9 @@
-package net.metrosystems.competition.studentsmgmt.citrus.config;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+package net.metrosystems.competition.studentsmgmt.config;
 
 import com.consol.citrus.dsl.endpoint.CitrusEndpoints;
 import com.consol.citrus.http.client.HttpClient;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class EndpointConfig {
