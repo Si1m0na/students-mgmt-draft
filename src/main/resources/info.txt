@@ -1,0 +1,5 @@
+- Postman - https://www.getpostman.com/
+- jdk 8 - https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+- Eclipse/Intellij - https://www.eclipse.org/downloads/  <>  https://www.jetbrains.com/idea/
+- Maven - https://maven.apache.org/download.cgi
+- Git Bash - https://git-scm.com/downloads
