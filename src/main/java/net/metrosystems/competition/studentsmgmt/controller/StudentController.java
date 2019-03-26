@@ -24,13 +24,13 @@ public class StudentController {
     //method type: delete           - path: /delete-all-students    - return: boolean - DONE
     //TODO: method type: get         - path: /all-students            - return: List<Student>  - returneaza in response body toti studentii din fisier
     //TODO: method type: get         - path: /students/{month}       - return: List<Student>  - returneaza in response body toti studentii nascuti in luna {month}
-    //TODO: method type: put         - path: /update/{id}            - return: List<Student> - updateaza numele(first name) studentului cu {id}, folosind valoarea preluata din request body
+    //TODO: method type: put         - path: /update/{id}            - return: List<Student> - updateaza numele(first name) studentului cu {id}, folosind valoarea preluata din request body (MediaType.TEXT_PLAIN_VALUE)
     //TODO: method type: delete      - path: /student/{id}           - return: List<Student> - sterge studentul din fisier cu {id} si returneaza in responde body toate informatiile despre studentul sters
 
     @Autowired
     private StudentService studentService;
 
-    @PostMapping(value = "/load-students", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/load-students", consumes = MediaType.TEXT_PLAIN_VALUE)
     public List<Student> loadStudentsIntoInputFile(@RequestBody List<Student> studentsList) {
         return studentService.loadStudentsIntoFile(studentsList);
     }
