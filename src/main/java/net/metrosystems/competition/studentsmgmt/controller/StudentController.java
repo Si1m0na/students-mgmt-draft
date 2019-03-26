@@ -30,7 +30,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @PostMapping(value = "/load-students", consumes = MediaType.TEXT_PLAIN_VALUE)
+    @PostMapping(value = "/load-students", consumes = MediaType.APPLICATION_JSON_VALUE)
     public List<Student> loadStudentsIntoInputFile(@RequestBody List<Student> studentsList) {
         return studentService.loadStudentsIntoFile(studentsList);
     }
